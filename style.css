@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #102033;
+  line-height: 1.6;
+  background: #f7fbff;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #08233f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 8%;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 18px;
+  font-weight: 500;
+}
+
+.hero {
+  min-height: 88vh;
+  background: linear-gradient(135deg, rgba(8,35,63,0.95), rgba(0,132,153,0.85)),
+              url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 8%;
+}
+
+.hero h1 {
+  font-size: 72px;
+  letter-spacing: 3px;
+}
+
+.hero h2 {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.hero p {
+  max-width: 760px;
+  font-size: 19px;
+  margin: 18px 0;
+}
+
+.buttons {
+  margin-top: 25px;
+}
+
+.btn {
+  padding: 12px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-right: 10px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.primary {
+  background: #00d2ff;
+  color: #08233f;
+}
+
+.secondary {
+  border: 2px solid white;
+  color: white;
+}
+
+.section {
+  padding: 70px 8%;
+}
+
+.section h2 {
+  font-size: 36px;
+  margin-bottom: 18px;
+  color: #08233f;
+}
+
+.dark {
+  background: #08233f;
+  color: white;
+}
+
+.dark h2 {
+  color: white;
+}
+
+.cards {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.card {
+  flex: 1 1 240px;
+  background: white;
+  padding: 24px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  color: #006b83;
+  margin-bottom: 10px;
+}
+
+.light {
+  background: #f4fbff;
+  color: #102033;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 25px;
+}
+
+.grid div {
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.25);
+  padding: 18px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.flow div {
+  background: linear-gradient(135deg, #00d2ff, #00a676);
+  color: white;
+  padding: 16px 20px;
+  border-radius: 14px;
+  font-weight: bold;
+}
+
+.flow span {
+  font-size: 26px;
+  font-weight: bold;
+  color: #006b83;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 25px;
+}
+
+.team div {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.restricted {
+  background: #fff7e6;
+  border-top: 4px solid #ffb703;
+}
+
+.note {
+  font-weight: bold;
+  color: #9a5b00;
+  margin: 12px 0;
+}
+
+button {
+  background: #08233f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+footer {
+  background: #06192b;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: block;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 6px 8px 0 0;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .hero h2 {
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UBRAIN | Ungauged Basin Rainfall Analysis and Intelligence Network</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">UBRAIN</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#literature">Literature</a>
+      <a href="#methodology">Methodology</a>
+      <a href="#basins">Basins</a>
+      <a href="#team">Team</a>
+      <a href="#access">Access</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>UBRAIN</h1>
+      <h2>Ungauged Basin Rainfall Analysis and Intelligence Network</h2>
+      <p>A Research Platform for Sub-Daily Rainfall Generation, IDF Analysis and Hydrological Intelligence for Ungauged River Basins.</p>
+      <div class="buttons">
+        <a href="#about" class="btn primary">Explore UBRAIN</a>
+        <a href="#access" class="btn secondary">Restricted Access</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About UBRAIN</h2>
+    <p>
+      UBRAIN is a research initiative developed to address the lack of reliable sub-daily rainfall information in ungauged and data-scarce river basins.
+      The platform integrates satellite rainfall products, ground observations, bias correction, temporal disaggregation, IDF analysis, and hydrological modelling.
+    </p>
+    <div class="cards">
+      <div class="card"><h3>Sub-Daily Rainfall</h3><p>Generation of 30-minute rainfall from daily satellite rainfall datasets.</p></div>
+      <div class="card"><h3>IDF Curves</h3><p>Design rainfall estimation for multiple durations and return periods.</p></div>
+      <div class="card"><h3>Hydrological Modelling</h3><p>Support for SWAT, HEC-HMS and peak discharge studies.</p></div>
+    </div>
+  </section>
+
+  <section id="literature" class="section dark">
+    <h2>Literature Hub</h2>
+    <p>UBRAIN maintains a curated knowledge base related to rainfall datasets, temporal disaggregation, IDF analysis and hydrological applications.</p>
+    <div class="grid">
+      <div>CHIRPS Rainfall</div>
+      <div>GPM IMERG</div>
+      <div>IMD Observations</div>
+      <div>Temporal Disaggregation</div>
+      <div>Method of Fragments</div>
+      <div>Bias Correction</div>
+      <div>IDF Analysis</div>
+      <div>SWAT Applications</div>
+    </div>
+  </section>
+
+  <section id="methodology" class="section">
+    <h2>UBRAIN Framework</h2>
+    <div class="flow">
+      <div>CHIRPS Daily</div>
+      <span>+</span>
+      <div>GPM IMERG</div>
+      <span>+</span>
+      <div>IMD Stations</div>
+      <span>→</span>
+      <div>Bias Correction</div>
+      <span>→</span>
+      <div>Temporal Disaggregation</div>
+      <span>→</span>
+      <div>IDF + SWAT</div>
+    </div>
+  </section>
+
+  <section id="basins" class="section dark">
+    <h2>Basin Library</h2>
+    <p>Initial case studies under UBRAIN development:</p>
+    <div class="cards">
+      <div class="card light"><h3>Sher Basin</h3><p>Central India rainfall disaggregation and IDF analysis.</p></div>
+      <div class="card light"><h3>Varuna Basin</h3><p>CMIP6, rainfall extremes and hydrological assessment.</p></div>
+      <div class="card light"><h3>Indravati Basin</h3><p>30-minute CHIRPS rainfall and SWAT peak discharge simulation.</p></div>
+      <div class="card light"><h3>Kantamal Basin</h3><p>Generic any-basin testing framework.</p></div>
+    </div>
+  </section>
+
+  <section id="team" class="section">
+    <h2>Developed By</h2>
+    <div class="team">
+      <div>
+        <h3>Hari Prakash</h3>
+        <p>Founder, UBRAIN<br>Ph.D. Research Scholar<br>Department of Civil Engineering<br>IIT (BHU), Varanasi</p>
+        <p><strong>Email:</strong> hari@ubrainindia.org</p>
+      </div>
+      <div>
+        <h3>Dr. Pramod Soni</h3>
+        <p>Faculty Advisor<br>Department of Civil Engineering<br>IIT (BHU), Varanasi</p>
+        <p><strong>Email:</strong> pramod.soni@ubrainindia.org</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="access" class="section restricted">
+    <h2>Restricted Research Access</h2>
+    <p>
+      UBRAIN is currently in the Research and Development Phase. Computational modules are restricted to authorized IIT(BHU) researchers and collaborators.
+    </p>
+    <p class="note">Allowed institutional emails: @iitbhu.ac.in and @itbhu.ac.in</p>
+    <button onclick="checkAccess()">Check Demo Access</button>
+    <p id="access-result"></p>
+  </section>
+
+  <footer>
+    <p>© UBRAIN Research Initiative | Department of Civil Engineering, IIT (BHU), Varanasi</p>
+    <p>info@ubrainindia.org | research@ubrainindia.org</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
