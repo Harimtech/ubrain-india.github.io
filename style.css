@@ -37,10 +37,18 @@ nav a {
 
 .hero {
   min-height: 88vh;
-  background: linear-gradient(135deg, rgba(8,35,63,0.95), rgba(0,132,153,0.85)),
-              url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80');
+  background:
+      linear-gradient(
+      135deg,
+      rgba(8,35,63,0.45),
+      rgba(0,132,153,0.25)
+      ),
+      url('ubrain-hero-banner.png');
+
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+
   color: white;
   display: flex;
   align-items: center;
